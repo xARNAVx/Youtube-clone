@@ -1,0 +1,39 @@
+/* Sidebar Styles */
+.side-bar {
+    position: fixed;
+    background-color: white;
+    left: 0px;
+    bottom: 0px;
+    top: 55px;
+    width: 72px;
+    z-index: 200;
+    padding-top: 5px;
+  }
+  
+  /* Sidebar Link Styles */
+  .sidebar-link {
+    cursor: pointer;
+    height: 74px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Sidebar Link Hover Styles */
+  .sidebar-link:hover {
+    background-color: rgb(235, 235, 235);
+  }
+  
+  /* Sidebar Link Image Styles */
+  .sidebar-link img {
+    margin-bottom: 7px;
+    height: 24px;
+  }
+  
+  /* Sidebar Link Text Styles */
+  .sidebar-link div {
+    font-family: Roboto, Arial;
+    font-size: 10px;
+  }
+  

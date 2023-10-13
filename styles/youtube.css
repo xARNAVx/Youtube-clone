@@ -1,0 +1,94 @@
+/* Remove text decoration for links */
+a:link {
+    text-decoration: none;
+}
+
+/* Set the color for visited links */
+a:visited {
+    color: black;
+}
+
+/* Ensure thumbnail images are responsive and don't exceed their container's width */
+.thumbnail-image {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Define a grid layout for video information */
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+/* Style for channel profile pictures */
+.channel-picture {
+    cursor: pointer;
+    width: 36px;
+    border-radius: 50px;
+}
+
+/* Style for video titles */
+.video-title {
+    cursor: pointer;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 15px;
+    text-underline-offset: none;
+}
+
+/* Add spacing below thumbnail rows */
+.thumbnail-row {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+/* Common style for channel names and views/upload information */
+.channel-name,
+.views-upload {
+    font-size: 12px;
+    color: rgb(152, 147, 147);
+}
+
+/* Style for channel names with a cursor pointer */
+.channel-name {
+    cursor: pointer;
+    margin-bottom: 4px;
+}
+
+/* Define a grid layout for videos, adjusting columns based on screen width */
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+
+/* Responsive design for smaller screens (max-width: 1125px) */
+@media (max-width: 1125px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* Responsive design for even smaller screens (max-width: 880px) */
+@media (max-width: 880px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Style for video time information */
+.video-time {
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: black;
+    padding: 4px;
+    border-radius: 2px;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 8px;
+}
